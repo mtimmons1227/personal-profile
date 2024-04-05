@@ -1,0 +1,78 @@
+/* Slideshow container styles */
+.slideshow-container {
+    position: relative; /* Position relative for containing slides */
+    /*max-width: 1000px; /* Set maximum width of the slideshow */
+    /*margin: auto; /* Center the slideshow horizontally */
+    border-radius: 8;
+    overflow: hidden;
+    height: 400px
+}
+
+/* Heading styles */
+h2 {
+    font-size: 26px; /* Set font size for heading */
+    margin-bottom: 12px; /* Add bottom margin for spacing */
+}
+
+.slideshow-containe h3 {
+    font-size: 24px;
+}
+
+.slideshow-containe p {
+    margin: 0
+}
+/* Individual slide styles */
+.slide {
+    display: none; /* Hide slides by default */
+    width: 100%; /* Make slides fill the container width */
+}
+
+.slide.active {
+    opacity: 1; /* Make active slide fully visible */
+}
+
+/* Image styles */
+.slide img {
+    width: 100%; /* Make images fill the container width */
+    height: 100%; /* Make images fill the container height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Overlay styles */
+.overlay {
+    position: absolute; /* Position overlay relative to its container */
+    bottom: 0; /* Align overlay to the bottom */
+    width: 100%; /* Make overlay cover the entire width */
+    background-color: rgba(0, 0, 0, 0.75); /* Partially transparent overlay */
+    color: white; /* Text color */
+    text-align: center; /* Center align text within overlay */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange text vertically */
+    justify-content: center; /* Center text vertically */
+    padding: 20px; /* Add padding for spacing */
+    align-items: center; /* Center align items within overlay */
+}
+
+/* Dot navigation container styles */
+.dot-container {
+    text-align: center; /* Center align dot container */
+    margin-top: 20px; /* Add top margin for spacing */
+    position: relative; /* Relative positioning for contained elements */
+    z-index: 1; /* Set z-index to ensure dot container is above overlay */
+}
+
+/* Dot styles */
+.dot {
+    display: inline-block; /* Display dot buttons inline */
+    width: 10px; /* Set width of dot buttons */
+    height: 10px; /* Set height of dot buttons */
+    margin: 0 5px; /* Add margin for spacing between dots */
+    background-color: #bbb; /* Set background color for dots */
+    border-radius: 50%; /* Make dots round */
+    cursor: pointer; /* Set cursor to pointer for interaction */
+}
+
+/* Active dot styles */
+.active {
+    background-color: #717171; /* Change background color for active dot */
+}
